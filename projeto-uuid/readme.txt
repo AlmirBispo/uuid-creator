@@ -1,0 +1,1 @@
+projeto desenvolvido com object pascal na ide Lazarus

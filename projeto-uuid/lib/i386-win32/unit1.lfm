@@ -1,0 +1,160 @@
+object Form1: TForm1
+  Left = 539
+  Height = 534
+  Top = 65
+  Width = 355
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = bsSingle
+  Caption = 'GUID creator'
+  ClientHeight = 534
+  ClientWidth = 355
+  Font.CharSet = ANSI_CHARSET
+  Font.Height = -15
+  Font.Name = 'Georgia'
+  Font.Pitch = fpVariable
+  Font.Quality = fqDraft
+  Position = poDesktopCenter
+  LCLVersion = '2.2.2.0'
+  object Button1: TButton
+    Left = 16
+    Height = 25
+    Top = 498
+    Width = 112
+    Caption = 'Gerar GUID'
+    OnClick = Button1Click
+    TabOrder = 0
+  end
+  object GroupBox1: TGroupBox
+    Left = 13
+    Height = 56
+    Top = 12
+    Width = 328
+    Caption = 'Quantidade de GUID'
+    ClientHeight = 33
+    ClientWidth = 324
+    TabOrder = 1
+    object SpinEdit1: TSpinEdit
+      Left = 24
+      Height = 26
+      Top = 0
+      Width = 64
+      MaxValue = 1
+      MinValue = 10000
+      TabOrder = 0
+      Value = 1
+    end
+  end
+  object GroupBox2: TGroupBox
+    Left = 13
+    Height = 53
+    Top = 64
+    Width = 329
+    Caption = 'Estilo'
+    ClientHeight = 30
+    ClientWidth = 325
+    TabOrder = 2
+    object RadioButton1: TRadioButton
+      Left = 16
+      Height = 22
+      Top = 0
+      Width = 62
+      Caption = 'Pascal'
+      TabOrder = 0
+    end
+    object RadioButton2: TRadioButton
+      Left = 232
+      Height = 22
+      Top = 0
+      Width = 80
+      Caption = 'Genérico'
+      Checked = True
+      TabOrder = 1
+      TabStop = True
+    end
+    object RadioButton5: TRadioButton
+      Left = 96
+      Height = 22
+      Top = 0
+      Width = 117
+      Caption = 'CSV Comp DB'
+      TabOrder = 2
+    end
+  end
+  object GroupBox3: TGroupBox
+    Left = 13
+    Height = 44
+    Top = 120
+    Width = 328
+    Caption = 'Case'
+    ClientHeight = 21
+    ClientWidth = 324
+    TabOrder = 3
+    object RadioButton3: TRadioButton
+      Left = 16
+      Height = 22
+      Top = 0
+      Width = 89
+      Caption = 'Uppercase'
+      TabOrder = 0
+    end
+    object RadioButton4: TRadioButton
+      Left = 232
+      Height = 22
+      Top = -8
+      Width = 90
+      Caption = 'Lowercase'
+      Checked = True
+      TabOrder = 1
+      TabStop = True
+    end
+  end
+  object GroupBox4: TGroupBox
+    Left = 13
+    Height = 317
+    Top = 168
+    Width = 326
+    Caption = 'Lista GUID únicos'
+    ClientHeight = 294
+    ClientWidth = 322
+    TabOrder = 4
+    object Memo1: TMemo
+      Left = 0
+      Height = 294
+      Top = 0
+      Width = 322
+      Align = alClient
+      Font.CharSet = ANSI_CHARSET
+      Font.Height = -12
+      Font.Name = 'Courier New'
+      Font.Pitch = fpFixed
+      Font.Quality = fqDraft
+      ParentFont = False
+      ScrollBars = ssAutoBoth
+      TabOrder = 0
+    end
+  end
+  object Button2: TButton
+    Left = 150
+    Height = 25
+    Top = 498
+    Width = 88
+    Caption = 'Salvar'
+    OnClick = Button2Click
+    TabOrder = 5
+  end
+  object Button3: TButton
+    Left = 261
+    Height = 25
+    Top = 498
+    Width = 77
+    Caption = 'Fechar'
+    OnClick = Button3Click
+    TabOrder = 6
+  end
+  object SaveDialog1: TSaveDialog
+    DefaultExt = '.csv'
+    Filter = '.csv|*.csv*|.txt|*.txt*|all|*.*'
+    Left = 224
+    Top = 496
+  end
+end
