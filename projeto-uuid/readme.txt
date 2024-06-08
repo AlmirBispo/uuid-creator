@@ -1,1 +1,1 @@
-projeto desenvolvido com object pascal na ide Lazarus
+Projeto desenvolvido com Object Pascal na IDE Lazarus ( wwww.lazarus-ide.org )
