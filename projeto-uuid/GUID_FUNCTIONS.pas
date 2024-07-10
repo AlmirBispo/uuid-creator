@@ -96,6 +96,8 @@ while (Glist.count < GUIDCOUNT) do
    if ( Glist.IndexOf(G) =-1 )then
     begin
     Glist.add( G );
+     application.ProcessMessages;
+     form1.label1.caption := 'Gerados: '+inttostr(Glist.count) + ' - ' + G ;
     end;
   end;
 result:= Glist.text;
@@ -150,6 +152,8 @@ while (Glist.count < GUIDCOUNT) do
    if ( Glist.IndexOf(G) =-1 )then
     begin
     Glist.add( G );
+    application.ProcessMessages;
+    form1.label1.caption := 'Gerados: '+inttostr(Glist.count) + ' - ' + G ;
     end;
   end;
 result:= Glist.text;

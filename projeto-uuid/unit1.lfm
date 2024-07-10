@@ -1,12 +1,12 @@
 object Form1: TForm1
-  Left = 539
-  Height = 534
-  Top = 65
+  Left = 318
+  Height = 564
+  Top = 76
   Width = 355
   BorderIcons = [biSystemMenu, biMinimize]
   BorderStyle = bsSingle
   Caption = 'GUID creator'
-  ClientHeight = 534
+  ClientHeight = 564
   ClientWidth = 355
   Font.CharSet = ANSI_CHARSET
   Font.Height = -15
@@ -14,15 +14,15 @@ object Form1: TForm1
   Font.Pitch = fpVariable
   Font.Quality = fqDraft
   Position = poDesktopCenter
-  LCLVersion = '2.2.2.0'
+  LCLVersion = '3.4.0.0'
   object Button1: TButton
     Left = 16
     Height = 25
-    Top = 498
+    Top = 514
     Width = 112
     Caption = 'Gerar GUID'
-    OnClick = Button1Click
     TabOrder = 0
+    OnClick = Button1Click
   end
   object GroupBox1: TGroupBox
     Left = 13
@@ -34,10 +34,11 @@ object Form1: TForm1
     ClientWidth = 324
     TabOrder = 1
     object SpinEdit1: TSpinEdit
-      Left = 24
+      Left = 8
       Height = 26
       Top = 0
-      Width = 64
+      Width = 144
+      Alignment = taCenter
       MaxValue = 1
       MinValue = 10000
       TabOrder = 0
@@ -57,7 +58,7 @@ object Form1: TForm1
       Left = 16
       Height = 22
       Top = 0
-      Width = 62
+      Width = 60
       Caption = 'Pascal'
       TabOrder = 0
     end
@@ -65,7 +66,7 @@ object Form1: TForm1
       Left = 232
       Height = 22
       Top = 0
-      Width = 80
+      Width = 78
       Caption = 'Genérico'
       Checked = True
       TabOrder = 1
@@ -75,7 +76,7 @@ object Form1: TForm1
       Left = 96
       Height = 22
       Top = 0
-      Width = 117
+      Width = 115
       Caption = 'CSV Comp DB'
       TabOrder = 2
     end
@@ -93,15 +94,15 @@ object Form1: TForm1
       Left = 16
       Height = 22
       Top = 0
-      Width = 89
+      Width = 87
       Caption = 'Uppercase'
       TabOrder = 0
     end
     object RadioButton4: TRadioButton
       Left = 232
       Height = 22
-      Top = -8
-      Width = 90
+      Top = 0
+      Width = 88
       Caption = 'Lowercase'
       Checked = True
       TabOrder = 1
@@ -110,16 +111,16 @@ object Form1: TForm1
   end
   object GroupBox4: TGroupBox
     Left = 13
-    Height = 317
+    Height = 338
     Top = 168
     Width = 326
     Caption = 'Lista GUID únicos'
-    ClientHeight = 294
+    ClientHeight = 315
     ClientWidth = 322
     TabOrder = 4
     object Memo1: TMemo
       Left = 0
-      Height = 294
+      Height = 315
       Top = 0
       Width = 322
       Align = alClient
@@ -136,20 +137,34 @@ object Form1: TForm1
   object Button2: TButton
     Left = 150
     Height = 25
-    Top = 498
+    Top = 514
     Width = 88
     Caption = 'Salvar'
-    OnClick = Button2Click
     TabOrder = 5
+    OnClick = Button2Click
   end
   object Button3: TButton
     Left = 261
     Height = 25
-    Top = 498
+    Top = 514
     Width = 77
     Caption = 'Fechar'
-    OnClick = Button3Click
     TabOrder = 6
+    OnClick = Button3Click
+  end
+  object Label1: TLabel
+    Left = 0
+    Height = 1
+    Top = 563
+    Width = 355
+    Align = alBottom
+    Alignment = taCenter
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -11
+    Font.Name = 'Consolas'
+    Font.Pitch = fpFixed
+    Font.Quality = fqDraft
+    ParentFont = False
   end
   object SaveDialog1: TSaveDialog
     DefaultExt = '.csv'

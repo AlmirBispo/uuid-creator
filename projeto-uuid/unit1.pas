@@ -19,6 +19,7 @@ type
     GroupBox2: TGroupBox;
     GroupBox3: TGroupBox;
     GroupBox4: TGroupBox;
+    Label1: TLabel;
     Memo1: TMemo;
     RadioButton1: TRadioButton;
     RadioButton2: TRadioButton;
@@ -70,7 +71,7 @@ if radiobutton5.Checked then
 
 if  not radiobutton5.Checked then
  begin
-memo1.Text:= GUIDmassive( qtd,Gstyle,scase);
+    memo1.Text:= GUIDmassive( qtd,Gstyle,scase);
  end;
   showmessage('Gerados: '+ inttostr(memo1.lines.count)+' GUIDs únicos');
 end;
